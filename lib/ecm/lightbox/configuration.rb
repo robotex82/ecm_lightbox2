@@ -8,6 +8,8 @@ module Ecm
       def configure
         yield self
       end
+
+      mattr_accessor(:use_bootstrap_modal) { true }
     end
   end
 end
